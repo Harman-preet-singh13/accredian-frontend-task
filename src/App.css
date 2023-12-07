@@ -1,38 +1,155 @@
-.App {
+h1{
+  font-weight: 700;
+}
+
+h2{
+  font-weight: 500;
+}
+
+p{
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(100 116 139);
+}
+
+form{
+  width: 100%;
+  margin-block:12px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color:inherit;
+}
+
+ul{
+  list-style-type: none;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/* navbar */
+
+.navbar{
+
+  margin-block: 6px;
+  border-bottom: 1px solid;
+  border-color: rgb(226 232 240);
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  
+}
+
+.nav-container{
+  max-width: 1440px;
+    display: flex;
+}
+
+.navbar-heading{
+
+  flex-grow: 1;
+
+  font-weight: 700;
+  text-align: center;
+  color:blue;
+
+  
+}
+
+.side-link{
+  display: flex;
+  gap:20px;
+}
+
+.link{
+  margin-block: 5px;
+  
+  padding:2px;
+  padding-inline:5px;
+  
+  color:#2563eb;
+  
+  border:1px solid #2563eb;
+  border-radius: 5px;
+}
+
+.link:hover{
+  color:white;
+  background-color: #2563eb;
+}
+
+/* app */
+
+main{
+  max-width: 1024px;
+  margin-inline: auto;
+}
+
+
+/* signup */
+
+.form-contianer{
+  max-width: 720px;
+  margin-inline: auto;
+  
+  height: 70vh;
+  
+  display: grid;
+  align-items: center;
+
+}
+
+.form-border{
+  padding:24px;
+  
+  border:1px solid;
+  border-radius: 5px;
+  border-color: rgb(226 232 240);
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.blue-link{
+  color: blue;
+}
+
+.text-field{
+  margin-block: 12px;
+}
+
+/* dashboard */
+
+.dashboard-container{
+  
+  height: 70vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dashboard > *{
+  margin-block:6px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dashboard h2{
+  font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.dashboard-username{
+  font-weight: 500;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
